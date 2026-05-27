@@ -1,0 +1,41 @@
+# ─── Virtual environment ──────────────────────────────
+.venv/
+venv/
+env/
+
+# ─── Python cache & bytecode ──────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ─── Build artifacts ──────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ─── Editor / IDE ─────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Test & coverage ──────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ─── Secrets — NEVER commit these ─────────────────────
+.env
+.env.local
+*.pem
+*.key
+secrets.json

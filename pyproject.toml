@@ -1,0 +1,13 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name             = "raise-agent-cart-agent"
+version          = "1.0.0"
+requires-python  = ">=3.12"
+dependencies     = ["raise-agent-sdk>=1.0.0"]
+
+# This is the line that lets rAIse discover your agent
+[project.entry-points."raise.agents"]
+cart-triage = "cart_agent.agent:CartTriageAgent"
