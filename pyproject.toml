@@ -11,3 +11,5 @@ dependencies     = ["raise-agent-sdk>=1.0.0"]
 # This is the line that lets rAIse discover your agent
 [project.entry-points."raise.agents"]
 cart-triage = "cart_agent.agent:CartTriageAgent"
+[tool.hatch.build.targets.wheel]
+packages = ["cart_agent"]
