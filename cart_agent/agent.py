@@ -22,7 +22,7 @@ class CartTriageAgent(RaiseAgent):
         "Skip this agent ONLY if the alert has nothing to do with shopping carts."
     )
 
-    role        = "cart_triage"
+    role        = "cart-triage"
     version     = "1.0.0"
     author      = "ecommerce-team"
 
