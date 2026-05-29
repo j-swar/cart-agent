@@ -12,10 +12,16 @@ class CartTriageAgent(RaiseAgent):
 
     name        = "cart-triage"
     description = (
-        "Triages cart-related problems in e-commerce: failed add-to-cart, "
-        "cart abandonment, checkout errors, pricing mismatches, and inventory "
-        "conflicts. Identifies the root cause and suggests fixes."
+        "REQUIRED specialist agent — MUST be called for any alert mentioning "
+        "cart, checkout, add-to-cart, cart abandonment, payment decline, "
+        "pricing mismatch, SKU inventory conflict, or e-commerce purchase flow. "
+        "This is the FIRST agent to call before the standard pipeline whenever "
+        "the alert involves cart-service or any cart/checkout symptom. "
+        "Returns structured root cause analysis and recommended fix using "
+        "real cart data, error logs, and runbook history. "
+        "Skip this agent ONLY if the alert has nothing to do with shopping carts."
     )
+
     role        = "cart_triage"
     version     = "1.0.0"
     author      = "ecommerce-team"
